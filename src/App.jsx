@@ -13,6 +13,7 @@ import Contact from './Contact'
 import Footer from './hero/footerLaut'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Terminal } from 'lucide-react';
 
 
 
