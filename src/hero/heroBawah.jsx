@@ -3,7 +3,7 @@ import React, { useRef } from 'react';
 import { OceanHeroCanvas } from './OceanHeroCanvas';
 import { FlyingSeagull } from './FlyingSeagull';
 import { TactileButton } from '../ui/TactileButton';
-import { Terminal, Code2, Globe, Database,Camera } from 'lucide-react'; // Pastikan Code2 ikut di-import di sini!
+import { Terminal, Code2, Globe, Database,Camera,Cpu } from 'lucide-react'; // Pastikan Code2 ikut di-import di sini!
 import './heroSection.css';
 
 export default function HeroSection() {
