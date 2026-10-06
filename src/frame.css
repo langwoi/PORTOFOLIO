@@ -1,0 +1,120 @@
+:root {
+  --color-ocean-blue: #0ea5e9;
+  --color-sand-beige: #fef3c7;
+  --color-brut-dark: #111827;
+  --border: 4px solid var(--color-brut-dark);
+}
+
+.hero-pantai {
+  position: relative;
+  width: 100vw;
+  min-height: 85vh;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  background: linear-gradient(180deg, #38bdf8 0%, #0284c7 80%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  z-index: 2;
+}
+
+.hero-name {
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  line-height: 1;
+  letter-spacing: -2px;
+  text-shadow: 4px 4px 0 var(--color-brut-dark);
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Kontainer Ombak */
+.neo-wave-container {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+  z-index: 2;
+  margin-bottom: -10px; 
+}
+
+.neo-wave-container svg {
+  display: block;
+  width: 100%;
+  height: 60px;
+}
+
+/* Dekorasi */
+.floating-plane {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(-10deg); }
+  50% { transform: translateY(-8px) rotate(-5deg); }
+}
+
+/* Area Pasir Bawah */
+.sand-bottom {
+  width: 100%;
+  background-color: var(--color-sand-beige);
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  z-index: 3;
+  position: relative;
+}
+/* Animasi untuk Teks Utama (Bisa berjalan pelan ke samping atau memantul) */
+@keyframes textSlide {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+.hero-name {
+  animation: textSlide 4s ease-in-out infinite;
+}
+
+/* Animasi untuk Pesawat / Objek agar bergerak melintang dari kiri ke kanan */
+@keyframes flyAcross {
+  0% {
+    transform: translateX(-50vw) translateY(0) rotate(-10deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(50vw) translateY(-30px) rotate(-10deg);
+    opacity: 0;
+  }
+}
+
+.floating-plane {
+  position: absolute;
+  top: 15%;
+  animation: flyAcross 8s linear infinite;
+}
+
+/* Animasi Mengambang untuk Objek Lain (seperti bebek/ikon) */
+@keyframes floatBob {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(5deg); }
+}
+
+.duck-icon {
+  display: inline-block;
+  animation: floatBob 3s ease-in-out infinite;
+}

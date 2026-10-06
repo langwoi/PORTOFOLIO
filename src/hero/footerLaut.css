@@ -1,0 +1,89 @@
+.ocean-footer {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  overflow: hidden;
+  padding: 4rem 1.5rem 1.5rem;
+  background: linear-gradient(180deg, #075985, #082f49);
+  color: #f8fafc;
+  text-align: center;
+}
+
+.ocean-footer__wave {
+  position: absolute;
+  z-index: -1;
+  inset: 0 0 auto;
+  height: 3rem;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.ocean-footer__wave svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: #0284c7;
+}
+
+.ocean-footer__content {
+  width: min(100%, 64rem);
+  margin-inline: auto;
+}
+
+.ocean-footer__brand {
+  display: inline-block;
+  color: #fff;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ocean-footer__brand:hover {
+  color: #fde68a;
+}
+
+.ocean-footer__tagline {
+  margin: 0.5rem 0 1.5rem;
+  color: #cbd5e1;
+}
+
+.ocean-footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.ocean-footer__nav a {
+  color: #e0f2fe;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ocean-footer__nav a:hover,
+.ocean-footer__nav a:focus-visible {
+  color: #fde68a;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.ocean-footer__copyright {
+  margin: 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgb(226 232 240 / 25%);
+  color: #cbd5e1;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 480px) {
+  .ocean-footer {
+    padding: 4rem 1rem 1.5rem;
+  }
+}

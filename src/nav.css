@@ -1,0 +1,53 @@
+
+
+/* Navbar Full Kiri Kanan */
+.brut-navbar {
+  background: var(--pantai); 
+  padding: 1rem 0; /* Padding vertikal saja, horizontal diatur di dalam */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  box-sizing: border-box;
+}
+
+.brut-navbar .container-fluid {
+  width: 100%;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand { 
+  font-size: 1.6rem; 
+  font-weight: 700; 
+  color: white; 
+  text-decoration: none; 
+  letter-spacing: -.02em; 
+}
+
+.brand strong { 
+  color: white; 
+  font-size: 2rem; 
+  margin-left: .4rem; 
+  letter-spacing: -.06em; 
+}
+
+.brut-nav-link { 
+  color: white; 
+  font-weight: 500; 
+  padding: .5rem 1.25rem; 
+  text-decoration: none; 
+  display: inline-block; 
+}
+
+.brut-nav-link:hover { 
+  text-decoration: underline; 
+  text-decoration-thickness: 3px; 
+  color: blanchedalmond; 
+}

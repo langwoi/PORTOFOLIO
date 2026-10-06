@@ -1,0 +1,124 @@
+.ocean-hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  min-height: 700px;
+  overflow: hidden;
+  background: #fef3c7;
+  color: #fff;
+  text-align: center;
+}
+
+.ocean-hero__canvas {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+}
+
+.ocean-hero__canvas canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.ocean-hero__title {
+  position: absolute;
+  z-index: 2;
+  top: 31%;
+  right: 0;
+  left: 0;
+  width: min(92%, 1000px);
+  margin: 0;
+  margin-inline: auto;
+  color: #fff;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-shadow: 3px 4px 0 #075985, 0 5px 18px rgb(0 0 0 / 28%);
+  pointer-events: none;
+}
+
+.ocean-hero__seagull-layer {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  pointer-events: none;
+}
+
+.ocean-hero__footer {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: clamp(2rem, 7vh, 5rem);
+  left: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.ocean-hero__footer-content {
+  display: flex;
+  width: min(100%, 48rem);
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.ocean-hero__description {
+  max-width: 38rem;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgb(255 255 255 / 45%);
+  border-radius: 1rem;
+  background: rgb(255 255 255 / 45%);
+  color: #1e293b;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-weight: 500;
+  line-height: 1.5;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.ocean-hero__actions {
+  display: flex;
+  justify-content: center;
+}
+
+.ocean-hero__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #38bdf8;
+  border-radius: 0.75rem;
+  background: #0284c7;
+  box-shadow: 0 4px 12px rgb(2 132 199 / 20%);
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.ocean-hero__button:hover {
+  background: #0369a1;
+}
+
+@media (max-width: 640px) {
+  .ocean-hero {
+    min-height: 600px;
+  }
+
+  .ocean-hero__title {
+    top: 30%;
+  }
+}

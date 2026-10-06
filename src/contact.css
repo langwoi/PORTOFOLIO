@@ -1,0 +1,119 @@
+.contact-section {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 4.5rem 1rem;
+  border-top: 3px solid #1a1a17;
+  background: #fef3c7;
+}
+
+.contact-container {
+  width: min(100%, 36rem);
+  margin-inline: auto;
+}
+
+.contact-card {
+  box-sizing: border-box;
+  padding: clamp(1.25rem, 5vw, 2.5rem);
+  border: 3px solid #1a1a17;
+  background: #fff;
+  box-shadow: 8px 8px 0 #1a1a17;
+  text-align: left;
+}
+
+.contact-title {
+  margin: 0 0 0.5rem;
+  color: #1a1a17;
+  font-size: clamp(1.75rem, 5vw, 2rem);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.contact-intro {
+  margin: 0 0 1.5rem;
+  color: #4b5563;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.contact-field {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.contact-field label {
+  color: #1a1a17;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.contact-field input,
+.contact-field textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 0.7rem 0.8rem;
+  border: 2px solid #1a1a17;
+  border-radius: 0;
+  background: #f9fafb;
+  box-shadow: 3px 3px 0 #1a1a17;
+  color: #1a1a17;
+  font: inherit;
+}
+
+.contact-field textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  outline: 3px solid #a100b4;
+  outline-offset: 2px;
+  background: #fff;
+}
+
+.contact-submit {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 3px solid #1a1a17;
+  border-radius: 0;
+  background: #ffe500;
+  box-shadow: 4px 4px 0 #1a1a17;
+  color: #1a1a17;
+  font: inherit;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.contact-submit:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #1a1a17;
+}
+
+.contact-submit:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 3rem 1rem;
+  }
+
+  .contact-card {
+    box-shadow: 5px 5px 0 #1a1a17;
+  }
+}

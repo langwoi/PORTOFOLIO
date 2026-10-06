@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@700&family=DM+Sans:wght@400;500&display=swap');
+
+:root {
+  --cream: #fdf9f1;
+  --ink: #1a1a17;
+  --olive: #6b5d00;
+  --yellow: #ffe500;
+  --blush: #ffd9d0;
+  --pink: #fbd3f2;
+  --purple: #a100b4;
+  --rust: #a63a0a;
+  --border: 3px solid var(--ink);
+  --pantai: linear-gradient(180deg, #38bdf8 20%, #0284c7 60%);
+  --pasir: #fef3c7;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--pasir); /* Mengikuti warna latar belakang pasir Anda */
+  overflow-x: clip;
+}
+
+h1, h2, h3, .brand, .btn-brut, .nav-link, .brut-nav-link {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+}
+
+:focus-visible { outline: 3px solid var(--purple); outline-offset: 3px; }
+
+/* Navbar Full Lebar Mentok Kiri Kanan */
+
+/* Hero */
+.hero { padding: 5rem 0 6rem; }
+.tag {
+  display: inline-block;
+  font-family: "Space Mono", monospace;
+  font-size: .8rem;
+  letter-spacing: .08em;
+  padding: .35rem .8rem;
+  border: var(--border);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+.tag-hire { background: var(--rust); color: #fff; transform: rotate(-2deg); }
+.tag-role { background: var(--blush); position: absolute; top: 1.5rem; left: -1.5rem; transform: rotate(4deg); z-index: 2; }
+.tag-stack { background: var(--purple); color: #fff; position: absolute; bottom: 2rem; right: -1rem; transform: rotate(-6deg); z-index: 2; }
+
+.hero h1 {
+  font-weight: 700;
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
+  line-height: 1;
+  letter-spacing: -.04em;
+  text-transform: uppercase;
+  margin: 1.75rem 0 1.5rem;
+  color: #836904;
+}
+.hero p{
+    color: #836904;
+}
+.about p {
+    text-align: center;
+}
+.hero .role { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: clamp(1.4rem, 2.6vw, 2.1rem); line-height: 1.25; color: var(--olive); }
+.hero .lead-text { max-width: 34rem; margin: 1.5rem 0 2.25rem; color: #4a4a42; }
+
+/* Tombol */
+.btn-brut {
+  border: var(--border);
+  border-radius: 0;
+  box-shadow: 5px 5px 0 var(--ink);
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: .7rem 1.8rem;
+  color: var(--ink);
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform .12s, box-shadow .12s;
+  background: #fff;
+  text-align: center;
+}
+.btn-brut:hover { transform: translate(3px, 3px); box-shadow: 2px 2px 0 var(--ink); color: var(--ink); }
+.btn-yellow { background: var(--yellow); }
+.btn-white { background: #fff; }
+
+/* Foto */
+.photo-wrap { position: relative; max-width: 460px; margin-inline: auto; }
+.photo-frame {
+  position: relative;
+  border: var(--border);
+  background: #d8d2c4;
+  box-shadow: 14px 14px 0 var(--pink), 17px 17px 0 var(--ink);
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+.photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* Section lain */
+section.block { padding: 4.5rem 0; border-top: var(--border); }
+section.block h2 { font-weight: 700; font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -.03em; margin-bottom: 2rem; }
+.brut-card { background: #fff; border: var(--border); box-shadow: 6px 6px 0 var(--ink); padding: 1.5rem; height: 100%; }
+.brut-card h3 { font-size: 1.35rem; font-weight: 700; }
+.chip { display: inline-block; background: var(--yellow); border: 2px solid var(--ink); padding: .2rem .8rem; margin: 0 .4rem .6rem 0; font-weight: 500; }
+footer { border-top: var(--border); padding: 1.5rem 0; font-size: .95rem; background: var(--cream); }
+
+/* --- TAMBAHAN STYLING SKILLS / TECH STACK (Figma Style) --- */
+.tech-section {
+  position: relative;
+}
+
+.tech-grid-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tech-lines {
+  z-index: 1;
+  pointer-events: none;
+}
+
+.tech-node {
+  position: absolute;
+  z-index: 2;
+  transition: transform 0.2s ease;
+}
+
+/* Tombol Tengah (TECH) */
+.tech-center-btn {
+  background-color: var(--ink);
+  color: var(--yellow);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  padding: 18px 76px;
+  border: var(--border);
+  box-shadow: 6px 6px 0px var(--rust);
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Kotak / Pill Keahlian */
+.tech-pill {
+  background: #fff;
+  border: var(--border);
+  box-shadow: 5px 5px 0px var(--ink);
+  padding: 10px 25px;
+  border-radius: 50px;
+}
+.tech-text {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--ink);
+}
+
+.tech-box {
+  background: #fff;
+  border: var(--border);
+  box-shadow: 5px 5px 0px var(--ink);
+  padding: 12px 22px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-sql-box {
+  background: #fff;
+  border: var(--border);
+  box-shadow: 5px 5px 0px var(--ink);
+  padding: 12px 22px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-circle-icon {
+  background: #fff;
+  border: var(--border);
+  box-shadow: 5px 5px 0px var(--ink);
+  padding: 12px 24px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 991px) {
+  .hero { padding: 3rem 0 4rem; }
+  .tag-role { left: -.5rem; }
+  .tag-stack { right: -.25rem; }
+  .btn-brut { font-size: 1.15rem; padding: .6rem 1.3rem; }
+}
