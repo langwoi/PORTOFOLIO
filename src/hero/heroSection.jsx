@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { ArrowDown } from 'lucide-react';
+
 import { OceanHeroCanvas } from './OceanHeroCanvas';
 import { FlyingSeagull } from './FlyingSeagull';
 import { TactileButton } from '../ui/TactileButton';
