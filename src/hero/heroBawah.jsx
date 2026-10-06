@@ -3,6 +3,7 @@ import React, { useRef } from 'react';
 import { OceanHeroCanvas } from './OceanHeroCanvas';
 import { FlyingSeagull } from './FlyingSeagull';
 import { TactileButton } from '../ui/TactileButton';
+import { Terminal } from 'lucide-react';
 import './heroSection.css';
 
 export default function HeroSection() {
