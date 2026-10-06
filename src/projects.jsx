@@ -4,7 +4,7 @@ import React, { useState } from "react";
   import rt from  './assets/Rt.png'
   import osis from './assets/osis.png'
   import red from './assets/red.png'
-  import without from './assets/WithoutData.png'
+  import without from './assets/withoutData.png'
   import black from './assets/black.jpeg'
   import pengaduan from './assets/pengaduan.png'
   import blue from './assets/blue.png'
