@@ -11,7 +11,6 @@ import './porto.css'
 import HeroBawah from './hero/heroBawah'
 import Contact from './Contact'
 import Footer from './hero/footerLaut'
-import { Frame } from 'lucide-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
