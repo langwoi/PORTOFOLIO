@@ -6,10 +6,6 @@ export default defineConfig({
   build: {
     rolldownOptions: {external: [
         'bootstrap/dist/css/bootstrap.min.css',
-        'lucide-react',
-        'aos',
-        'framer-motion',
-        'sweetalert2'
       ]
     }
   }
