@@ -4,6 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Hero from './hero'
 //import './frame.css'
 //import './nav.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './navbar';
 import Projects from './projects'
 import  HeroSection  from "./hero/heroSection";
